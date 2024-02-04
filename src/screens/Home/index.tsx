@@ -1,8 +1,16 @@
-import { Image, View, TextInput, TouchableOpacity, Text } from 'react-native'
+import {
+  Image,
+  View,
+  TextInput,
+  TouchableOpacity,
+  Text,
+  FlatList,
+} from 'react-native'
 import { styles } from './styles'
 import Logo from '../../../assets/Logo.png'
 
 export function Home() {
+  const todoList = ['etc', 'etal']
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -37,6 +45,21 @@ export function Home() {
             </View>
           </View>
         </View>
+        <FlatList
+          data={[]}
+          keyExtractor={(item) => item}
+          renderItem={(item) => <Text>{item.item}</Text>}
+          ListEmptyComponent={() => (
+            <View style={styles.emptyListContainer}>
+              <Text style={styles.emptyListTextBold}>
+                Você ainda não tem tarefas cadastradas
+              </Text>
+              <Text style={styles.emptyListText}>
+                Crie tarefas e organize seus itens a fazer
+              </Text>
+            </View>
+          )}
+        />
       </View>
     </View>
   )

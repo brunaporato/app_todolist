@@ -92,4 +92,23 @@ export const styles = StyleSheet.create({
     color: '#D9D9D9',
     fontWeight: 'bold',
   },
+
+  emptyListContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 64,
+    gap: 4,
+  },
+
+  emptyListText: {
+    color: '#808080',
+    fontSize: 14,
+  },
+
+  emptyListTextBold: {
+    color: '#808080',
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
 })
