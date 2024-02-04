@@ -52,4 +52,44 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
+
+  headerList: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: 20,
+    marginTop: 13,
+    borderBottomColor: '#333',
+    borderBottomWidth: 1,
+  },
+
+  textHeaderList: {
+    flexDirection: 'row',
+    gap: 8,
+    alignItems: 'center',
+  },
+
+  created: {
+    color: '#4EA8DE',
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+
+  done: {
+    color: '#8284fa',
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+
+  numberContainer: {
+    backgroundColor: '#333',
+    paddingVertical: 2,
+    paddingHorizontal: 8,
+    borderRadius: 999,
+  },
+
+  numberHeader: {
+    fontSize: 12,
+    color: '#D9D9D9',
+    fontWeight: 'bold',
+  },
 })

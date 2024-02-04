@@ -23,6 +23,20 @@ export function Home() {
             <Text style={styles.buttonText}>+</Text>
           </TouchableOpacity>
         </View>
+        <View style={styles.headerList}>
+          <View style={styles.textHeaderList}>
+            <Text style={styles.created}>Criadas</Text>
+            <View style={styles.numberContainer}>
+              <Text style={styles.numberHeader}>0</Text>
+            </View>
+          </View>
+          <View style={styles.textHeaderList}>
+            <Text style={styles.done}>Concluidas</Text>
+            <View style={styles.numberContainer}>
+              <Text style={styles.numberHeader}>0</Text>
+            </View>
+          </View>
+        </View>
       </View>
     </View>
   )
