@@ -20,6 +20,7 @@ export const styles = StyleSheet.create({
 
   content: {
     paddingHorizontal: 24,
+    flex: 1,
   },
 
   addTask: {
@@ -35,22 +36,24 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#0D0D0D',
     flex: 1,
+
+    color: '#f2f2f2',
+    fontSize: 16,
   },
 
   addButton: {
     backgroundColor: '#1E6F9F',
     borderRadius: 6,
-    width: 48,
-    height: 48,
-
+    padding: 18,
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   buttonText: {
-    color: '#F2F2F2',
-    fontSize: 18,
-    fontWeight: 'bold',
+    backgroundColor: 'red',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 1,
   },
 
   headerList: {
@@ -58,8 +61,6 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: 20,
     marginTop: 13,
-    borderBottomColor: '#333',
-    borderBottomWidth: 1,
   },
 
   textHeaderList: {
@@ -99,6 +100,12 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 64,
     gap: 4,
+    borderTopColor: '#333',
+    borderTopWidth: 1,
+  },
+
+  emptyListIcon: {
+    marginBottom: 16,
   },
 
   emptyListText: {
@@ -110,5 +117,9 @@ export const styles = StyleSheet.create({
     color: '#808080',
     fontSize: 14,
     fontWeight: 'bold',
+  },
+
+  list: {
+    marginBottom: 24,
   },
 })
