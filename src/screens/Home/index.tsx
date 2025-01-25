@@ -36,13 +36,13 @@ export function Home() {
 
   function handleAddNewTask() {
     if (taskList.some((item) => item.task === newTask.task)) {
-      return Alert.alert('Task duplicated', 'Hey, you already added that task.')
+      return Alert.alert('Task duplicated', 'You already added that task.')
     }
 
     if (newTask.task === '') {
       return Alert.alert(
         'Empty task',
-        'Hey, you should write some task before adding it',
+        'You should write some task before adding it',
       )
     }
 
@@ -62,7 +62,7 @@ export function Home() {
         style: 'destructive',
       },
       {
-        text: 'Cancel',
+        text: 'No',
         style: 'cancel',
       },
     ])
@@ -87,6 +87,9 @@ export function Home() {
               setNewTask({ task: text, isChecked: false })
             }
             value={newTask.task}
+            autoCorrect={false}
+            autoComplete="off"
+            onSubmitEditing={handleAddNewTask}
           />
           <TouchableOpacity style={styles.addButton} onPress={handleAddNewTask}>
             <Icon name="add-circle-outline" size={18} color="#F2F2F2" />
